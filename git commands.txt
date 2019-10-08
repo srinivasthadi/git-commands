@@ -1,0 +1,71 @@
+echo "# mytestapp2" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/srinivasthadi/mytestapp2.git
+git push -u origin master
+
+git branch -a --------------- for knowing all the branches
+
+git checkout -b branchName
+git checkout master
+
+ In order to commit
+git add .
+git commit -m "added a new component"
+
+remove from staging area
+git rm --cached filename
+
+git log --online and git log ------ for logging
+
+git branch -d branchname  small -d only works after merging
+we use capital -D
+
+git branch -D branchname
+
+
+in order to merge, 
+we have to go to the branch we wana merge into
+and then from there give the command
+git merge branchname ---- branchname should be branch, which you wana merge
+
+when you get the new window while mergin
+shift :wq enter
+
+
+setting up alias
+git remote add origin(alias) and then git repo link
+git remote add origin https://github.com/srinivasthadi/mytestapp2.git
+git push origin master
+
+git remote -v .. to know the remote repository
+
+----------------------------------------
+git pull origin master (fetches all the code from the remote repo and then merges into our local branch.. To keep all the files updated)
+
+git checkout -b branchname (creating a new branch)
+make changes in the project
+git add .
+git commit -m "descriptive name)
+
+To push to the new branch
+git push origin branchname
+
+pull from the master
+git pull origin master
+------------------------------------------------
+cloning the code form single branch
+git clone git@bitbucket.org:project/project.git -b develop_one --single-branch --- working fine
+git clone https://github.com/example/example1.git -b branch_name --single-branch local_name
+
+push to already exisitng branch
+git push origin branch_name
+
+
+
+
+
+
+
+
